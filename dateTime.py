@@ -81,6 +81,29 @@ class DateTime:
 
         return todays_fmt_datetime
 
+    def get_fmt_date_for_file(self):
+        if self.debug: print "::Datetime::get_fmt_date_for_file"
+
+        now = self.get_now()
+        add_zero = self.add_zero
+
+        todays_fmt_datetime = "_" + add_zero(now.year) + "-" + add_zero(now.month) + "-" + \
+                              add_zero(now.day)
+
+        return todays_fmt_datetime
+
+    def get_fmt_datetime_for_file(self):
+        if self.debug: print "::Datetime::get_fmt_datetime_for_file"
+
+        now = self.get_now()
+        add_zero = self.add_zero
+
+        todays_fmt_datetime = "_" + add_zero(now.year) + "-" + add_zero(now.month) + "-" + \
+                              add_zero(now.day) + "_" + add_zero(now.hour) + "." + \
+                              add_zero(now.minute) + "." + add_zero(now.second)
+
+        return todays_fmt_datetime
+
     def get_dt_with_epoch(self, epoch_sec):
         if self.debug: print "::Datetime::get_dt_with_epoch"
 

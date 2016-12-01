@@ -14,11 +14,11 @@ except ImportError as err:
     print "ERROR >>> Could not import 'dateTime' <<<", err
     import dateTime
 
-try:
-    import db
-except ImportError as err:
-    print "ERROR >>> Could not import 'db' <<<", err
-    import db
+# try:
+#     import db
+# except ImportError as err:
+#     print "ERROR >>> Could not import 'db' <<<", err
+#     import db
 
 try:
     import fileUtility

@@ -131,8 +131,15 @@ class FileUtility:
 
         return std_fields
 
-    def write_file(self):
+    def write_file(self, file_path, data):
         if self.debug: print "::FileUtility::write_file"
+
+        target = open(file_path, 'a')
+
+        target.write(data)
+
+        target.close()
+
 
     def copy_file(self, file_name, source_path, destination_path):
         if self.debug: print "::FileUtility::copy_file"
