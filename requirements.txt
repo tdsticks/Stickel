@@ -1,4 +1,4 @@
 paramiko==~>1.17.6
 pycrypto<=2.6.1
-PyMySQL==0.6.7
+PyMySQL==1.1.1
 pysftp==0.2.9
